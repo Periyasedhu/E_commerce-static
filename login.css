@@ -1,0 +1,113 @@
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+.container {
+  color: #818ea0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  margin: auto;
+  height: 600px;
+  margin-top: 20px;
+}
+.container h2 {
+  color: #777;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+#form button {
+  background-color: #088178;
+  color: #fff;
+}
+
+#form .button-group {
+  display: flex;
+  gap: 10px;
+}
+
+#form .button-group a {
+  font-size: 20px;
+  color: #777;
+}
+
+#form .user {
+  display: flex;
+  flex-direction: column;
+}
+
+#form a {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  color: #777;
+}
+
+#form a:hover {
+  color: #088178;
+}
+@media (max-width: 477px) {
+  .container {
+    margin: 10px;
+    height: 600px;
+  }
+  .container h2 {
+    font-size: 12px;
+  }
+}
